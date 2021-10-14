@@ -1,13 +1,6 @@
 
-
-
-
-
-
-
-//Chiedi all’utente la sua email, 
-
-const userEmail = prompt('inserisci la tua mail');
+const userEmail = document.getElementById('campo_email');
+const tryButton = document.getElementById('generate');
 const emailList = [
     'mario.rossi@gmail.com',
     'mario.bianchi@gmail.com',
@@ -15,14 +8,28 @@ const emailList = [
     'mario.neri@gmail.com',
 ]
 
-for (var i = 0; i < userEmail.length; i++) {
-    if (userEmail == emailList[i]) {
-      alert('login effettuato correttamente!');
-      break;
-    } else {
-      alert('login errato!')
+
+
+tryButton.addEventListener('click', function () {
+
+    const tryEmail = userEmail.value;
+    console.log(tryEmail);
+
+
+    for (var i = 0; i < tryEmail.length; i++) {
+        if (tryEmail == emailList[i]) {
+        alert('login effettuato correttamente!');
+        console.log('login effettuato correttamente!');
+        break;
+        } 
+
+
+        
+        else {
+        alert('login errato!')
+        }
     }
-  }
+});
 
 
 
@@ -32,10 +39,13 @@ for (var i = 0; i < userEmail.length; i++) {
 
 
 
-
-
-// stampa un messaggio appropriato sull’esito del controllo.
-alert
-
-
-
+/* for (var i = 0; i < userEmail.length; i++) {
+    if (userEmail == emailList[i]) {
+    alert('login effettuato correttamente!');
+    console.log('login effettuato correttamente!');
+    break;
+    } 
+    else {
+    alert('login errato!')
+    }
+} */
