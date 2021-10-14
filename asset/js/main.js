@@ -29,7 +29,7 @@ tryButton.addEventListener('click', function () {
     const tryEmail = userEmail.value;
     console.log(tryEmail);
 
-    // se l'utente non inserire una corretta opzione di accesso non giocherà
+    // se l'utente non inserisce una corretta opzione di accesso non giocherà
 
     for (let i = 0; i < tryEmail.length; i++) {
 
