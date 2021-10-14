@@ -46,7 +46,7 @@ tryButton.addEventListener('click', function () {
             else if (dadoPlayer > dadoComputer){
                 messaggio2.textContent = 'hai vinto!' 
             }
-            else if (dadoPlayer = dadoComputer){
+            else if (dadoPlayer == dadoComputer){
                 messaggio2.textContent = 'pareggio!' 
             }
             break;
