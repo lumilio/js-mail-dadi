@@ -7,6 +7,7 @@ const emailList = [
     'mario.verdi@gmail.com',
     'mario.neri@gmail.com',
 ]
+let messaggio1 = document.getElementById('messaggio1')
 
 
 
@@ -16,17 +17,15 @@ tryButton.addEventListener('click', function () {
     console.log(tryEmail);
 
 
-    for (var i = 0; i < tryEmail.length; i++) {
+    for (let i = 0; i < tryEmail.length; i++) {
+
         if (tryEmail == emailList[i]) {
-        alert('login effettuato correttamente!');
-        console.log('login effettuato correttamente!');
-        break;
+            messaggio1.textContent = 'login effettuato correttamente, giochiamo a dadi!'
+            break;
         } 
 
-
-        
         else {
-        alert('login errato!')
+            messaggio1.textContent = 'login errato!'
         }
     }
 });
@@ -39,13 +38,3 @@ tryButton.addEventListener('click', function () {
 
 
 
-/* for (var i = 0; i < userEmail.length; i++) {
-    if (userEmail == emailList[i]) {
-    alert('login effettuato correttamente!');
-    console.log('login effettuato correttamente!');
-    break;
-    } 
-    else {
-    alert('login errato!')
-    }
-} */
